@@ -1,4 +1,5 @@
-program 1
+Program 1
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -10,7 +11,9 @@ cout<<fahrerheit<<endl;
     return 0;
 }
 
-program 2 
+
+Program 2 
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -24,7 +27,9 @@ int main() {
     return 0;
 }
 
-program 3 
+
+Program 3 
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -38,7 +43,9 @@ int main() {
     return 0;
 }
 
-program 4
+
+Program 4
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -47,5 +54,26 @@ int main() {
   bool isEqu = (side1 > 0) && (side1 == side2) && (side2 == side3);
   cout << isEqu << endl;
   
+    return 0;
+}
+
+
+Program 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int userId = 1357;
+    int userPassword = 1290;
+    
+    int inputId;
+    int inputPassword;
+    
+    cin >> inputId >> inputPassword;
+    
+    bool isGranted = (userId == inputId) && (userPassword == inputPassword);
+    cout << "Access Granted" << isGranted << endl;
+    cout << "Access Denied" << isGranted << endl;
     return 0;
 }
