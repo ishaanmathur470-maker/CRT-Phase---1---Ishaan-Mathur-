@@ -1,12 +1,1 @@
-#include <iostream>
-using namespace std;
-int main() {
-  int globalvariable=100;
-  int localvariable;
-  int result;
-  cin>>localvariable;
-  result = (globalvariable / localvariable);
-  cout<<result<<endl;
-  
-    return 0;
-}
+
