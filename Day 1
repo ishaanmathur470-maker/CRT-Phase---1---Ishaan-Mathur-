@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+  double celcius;
+  double fahrerheit;
+ cin>>celcius;
+fahrerheit = (celcius*9.0/5.0)+32;
+cout<<fahrerheit<<endl;
+    return 0;
+}
