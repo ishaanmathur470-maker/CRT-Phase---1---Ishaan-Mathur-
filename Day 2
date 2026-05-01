@@ -102,3 +102,32 @@ int main() {
 
     return 0;
 }
+
+
+Program 5 (Calling agent)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+        cout << "Transfering call to support team";
+        break;
+        case 2:
+        cout << "Transfering call to account and billing department";
+        break;
+        case 3:
+        cout << "Transfering call to technical team";
+        break;
+        case 4:
+        cout << "Please wait we are connecting your call to customer agent";
+        break;
+        default:
+        cout << " Please enter a vaiid choice";
+        
+    }
+    return 0;
+}
