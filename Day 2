@@ -1,0 +1,17 @@
+Program 1 (Age checker)
+
+#include <iostream>
+using namespace std;
+int main() {
+    int age;
+    cout << "Enter your age -: ";
+    cin >> age;
+    
+    if(age>=18){
+        cout << "!! ELIGIBLE FOR VOTE !!";
+    
+    }else {
+        cout << "!! NOT ELIGIBLE FOR VOTE !!";
+    }
+    return 0;
+}
