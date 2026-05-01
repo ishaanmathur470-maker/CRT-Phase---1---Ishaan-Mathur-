@@ -15,3 +15,31 @@ int main() {
     }
     return 0;
 }
+
+
+Program 2 (Vote age checker)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout << "Enter your age -: ";
+    cin >> age;
+
+    if(age <= 0){
+        cout << "PLEASE ENTER A VALID AGE";
+    }
+    else if(age >= 18){
+        if(age >= 50){
+            cout << "!! SENIOR CITIZEN ELIGIBLE FOR VOTE !!";
+        } 
+        else {
+            cout << "!! ELIGIBLE FOR VOTE !!";
+        }
+    } 
+    else {
+        cout << "!! NOT ELIGIBLE FOR VOTE !!";
+    }
+
+    return 0;
+}
