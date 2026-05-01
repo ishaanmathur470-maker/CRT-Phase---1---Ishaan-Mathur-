@@ -43,3 +43,24 @@ int main() {
 
     return 0;
 }
+
+
+Program 3 (Finding maximum number)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a , b;
+    int max_number;
+    cout << "Enter the first number : ";
+    cin >> a;
+    cout << "Enter the second number : ";
+    cin >> b;
+    
+    max_number = (a > b) ? a : b;
+    cout << " Max Number is " << max_number;
+    
+    
+
+    return 0;
+}
