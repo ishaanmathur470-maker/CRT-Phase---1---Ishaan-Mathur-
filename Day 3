@@ -103,3 +103,19 @@ int main() {
     cout << " Factorial Will be - : " << fact;
     return 0;
 }
+
+Program 8 (Phone password check)
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int password;
+    do{
+        cout << "Enter your password here - : ";
+        cin >> password;
+        } while (password!= 123456);
+        cout << " Phone Unlocked";
+    
+    return 0;
+} 
