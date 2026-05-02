@@ -68,3 +68,21 @@ int main() {
     return 0;
 }
 
+Program 6 (Finding Odd number using do while loop)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;
+    cout << "ENTER A NUMBER: ";
+    cin >> i;
+    int y = 1;  
+    do {
+        if (y % 2 != 0) {
+            cout << y << " ";
+        }
+        y++;   
+    } while (y <= i);
+
+    return 0;
+}
