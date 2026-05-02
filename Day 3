@@ -38,3 +38,17 @@ int main() {
     }
     return 0;
 }
+
+Program (Printing 1-10 using while loop)
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int i=1;
+    while ( i<=10){
+        if 
+    cout<< i << "  ";
+    i++;
+    }
+    return 0;
+}
