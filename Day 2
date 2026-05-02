@@ -159,3 +159,100 @@ int main() {
 
     return 0;
 }
+
+
+Program 7 (Grade calculator)
+#include <iostream>
+using namespace std;
+
+int main() {
+    float marks;
+
+    cout << "Enter your marks (out of 100): ";
+    cin >> marks;
+
+    if (marks >= 90) {
+        cout << "Grade: A+";
+    }
+    else if (marks >= 80) {
+        cout << "Grade: A";
+    }
+    else if (marks >= 70) {
+        cout << "Grade: B";
+    }
+    else if (marks >= 60) {
+        cout << "Grade: C";
+    }
+    else if (marks >= 50) {
+        cout << "Grade: D";
+    }
+    else {
+        cout << "Grade: F (Fail)";
+    }
+
+    return 0;
+}
+
+Program 8 (Leap year checker)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        cout << year << " is a Leap Year";
+    } else {
+        cout << year << " is not a Leap Year";
+    }
+
+    return 0;
+}
+
+Program 9 (Even or odd checker)
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a number-:  ";
+    cin >> num;
+
+    if (num % 2 == 0){
+        cout << num << " is a even number";
+    } else {
+        cout << num << " is a odd number";
+    }
+
+    return 0;
+} 
+
+Program 10 (ATM Withdrawer checker)
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance, amount;
+
+    cout << "Enter account balance: ";
+    cin >> balance;
+
+    cout << "Enter withdrawal amount: ";
+    cin >> amount;
+
+    if (amount <= 0) {
+        cout << "Invalid amount";
+    }
+    else if (amount > balance) {
+        cout << "Insufficient balance";
+    }
+    else {
+        balance -= amount;
+        cout << "Withdrawal successful\nRemaining balance: " << balance;
+    }
+
+    return 0;
+}
