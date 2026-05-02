@@ -22,3 +22,19 @@ int main() {
     }
     return 0;
 }
+
+Program 3 (Printing even number by taking input from user)
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int i;
+    cout << "ENTER A NUMBER-: ";
+    cin >> i;
+    for(int y=1 ; y<=i; y++){
+        if (y % 2 ==0 ){
+        cout << y << ", ";
+    } 
+    }
+    return 0;
+}
