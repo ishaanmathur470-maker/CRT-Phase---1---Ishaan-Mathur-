@@ -30,3 +30,22 @@ int main() {
     
     return 0;
 }
+
+Program 3 ( Printing a right angle triangle by user input)
+#include <iostream>
+using namespace std;
+int main() {
+    int x, y;
+    cout << "Enter Number of coulmns-: ";
+    cin >> x;
+    cout << "Enter number of rows-: ";
+    cin >> y;
+    for(int i=1; i<=x; i++){
+        for(int j=1; j<=y; j++){
+            cout << "*";
+          }
+          cout << '\n';
+    } 
+    
+    return 0;
+}
