@@ -105,3 +105,26 @@ int main() {
 
     return 0;
 }
+
+
+//Program 4.4 -- Arguments, Return Value
+
+#include <iostream>
+using namespace std;
+
+float convert(float rupees){
+    return rupees / 95.36;
+}
+
+int main() {
+    float rupees, dollar;
+
+    cout << "Enter Rupees-: ";
+    cin >> rupees;
+
+    dollar = convert(rupees);
+
+    cout << "Amount in dollar is -: " << dollar;
+
+    return 0;
+}
