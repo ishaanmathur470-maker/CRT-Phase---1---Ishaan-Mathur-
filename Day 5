@@ -22,3 +22,16 @@ cout <<"\n";
   
     return 0;
 }
+
+// Program 2 (Basic functions)
+#include <iostream>
+using namespace std;
+
+void printMessage(){
+    cout << "Hi we are learning functions...";
+}
+int main(){
+printMessage();
+    
+    return 0;
+}
