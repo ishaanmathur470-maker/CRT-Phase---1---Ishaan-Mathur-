@@ -1,0 +1,24 @@
+Program 1 (Triangle Printing sidewise)
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    //upper triangle
+  for(int i =1; i <=5; i++){
+      for( int j=1; j<=i; j++){
+          cout << "* ";
+      }
+      cout << "\n";
+  }
+  
+  //lower triangle
+  for(int i =5-1 ; i >= 1; i--){
+      for(int j=1; j<=i; j++){
+          cout << "* ";
+      }
+cout <<"\n"; 
+  }
+  
+  
+    return 0;
+}
