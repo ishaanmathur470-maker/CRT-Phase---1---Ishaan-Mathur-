@@ -54,3 +54,20 @@ int main() {
 
     return 0;
 }
+
+
+//Program 4 
+//Types of functions 
+//Program 4.1 -- No Arguments , No Return Values
+
+#include <iostream>
+using namespace std;
+
+void bellRing(){
+    cout <<"Ting tong...";
+}
+int main(){
+    bellRing();
+
+    return 0;
+}
