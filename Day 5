@@ -58,6 +58,8 @@ int main() {
 
 //Program 4 
 //Types of functions 
+
+
 //Program 4.1 -- No Arguments , No Return Values
 
 #include <iostream>
@@ -68,6 +70,22 @@ void bellRing(){
 }
 int main(){
     bellRing();
+
+    return 0;
+}
+
+
+//Program 4.2 -- Arguments , No Return Values
+
+#include <iostream>
+using namespace std;
+
+void sendMessages(string message) {
+    cout << message;
+}
+int main(){
+    sendMessages ("BJP wons");
+
 
     return 0;
 }
