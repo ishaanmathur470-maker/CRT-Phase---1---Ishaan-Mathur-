@@ -89,3 +89,19 @@ int main(){
 
     return 0;
 }
+
+
+//Program 4.3 -- No Arguments ,  Return Values
+
+#include <iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main() {
+    cout << ticketNumber();
+
+    return 0;
+}
