@@ -21,3 +21,16 @@ int main (){
     cout << billing(50);
 }
 
+
+// Program 3
+#include <iostream>
+using namespace std;
+
+int billing(int a){
+    return (a - a*0.20);
+}
+int main (){
+    cout << billing(50);
+}
+
+
