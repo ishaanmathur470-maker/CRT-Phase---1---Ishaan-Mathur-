@@ -105,3 +105,29 @@ int main() {
     return 0;
 }
 
+
+// program -- 7
+// class
+#include <iostream>
+using namespace std;
+
+class student{
+
+public:
+    string name;
+    int age;
+    
+void introduce(){
+    cout << "Hi there, this person name is " << name << " and his age is " << age << "\n";
+    }
+};
+
+int main(){
+    student s1, s2;
+    s1.name = "Ishaan";
+    s1.age = 24;
+    s2.name = "Rahul";
+    s2.age = 23;
+    s1.introduce();
+    s2.introduce();
+}
