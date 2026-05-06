@@ -131,3 +131,25 @@ int main(){
     s1.introduce();
     s2.introduce();
 }
+
+/ program -- 8
+// class
+// Types
+//7.1 Public
+//7.2 Private
+//7.3 Protected
+
+//7.1 Public
+#include <iostream>
+using namespace std;
+class publicPark{
+    public:
+    void enter() {
+        cout << "Anyone can enter in the park..";
+    }
+};
+int main(){
+    publicPark p;
+    p.enter();
+}
+
