@@ -84,3 +84,24 @@ int main(){
     return 0;
 }
 
+// Program 6 
+// Swapping of 2 Number value usinf pointer and using functions
+#include <iostream>
+using namespace std;
+
+void swapNumber(int *ptr1, int *ptr2){
+int temp = *ptr1;
+*ptr1 = *ptr2;
+*ptr2 = temp; 
+}
+
+int main() {
+    int a, b;
+    cin >> a;
+    cin >> b;
+    swapNumber(&a, &b);
+    cout << a << " " << b;
+
+    return 0;
+}
+
