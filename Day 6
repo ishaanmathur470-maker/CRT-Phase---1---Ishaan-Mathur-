@@ -1,0 +1,23 @@
+// Program -- 1
+#include <iostream>
+using namespace std;
+int main() {
+   int coffee , bill;
+   cout << "Enter number of coffee-: ";
+   cin >> coffee;
+   bill = 30 * coffee;
+cout << " Price will be " << bill;
+    return 0;
+}
+
+//Program --2
+#include <iostream>
+using namespace std;
+
+int billing(int a){
+    return a * 30;
+}
+int main (){
+    cout << billing(50);
+}
+
