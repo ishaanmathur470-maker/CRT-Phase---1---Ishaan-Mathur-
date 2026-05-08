@@ -106,3 +106,64 @@ int main() {
     b.drive();
     return 0;
 }
+
+#include <iostream>
+using namespace std;
+
+//problem --4
+//types of inheritance
+//1.4---multiple inheritance
+
+class parent1{
+public:
+   void paiseDoMummy() {
+       cout <<"Mummy paise de do bahar jana hai..." << "\n";
+   }
+};
+
+class parent2{
+public:
+     void paisedopapa(){
+         cout <<"papa paise de do virtus lanni hai...";
+     }
+};
+
+class child : public parent1, public parent2 {
+};
+
+int main() {
+    child c;
+    c.paiseDoMummy();
+    c.paisedopapa();
+}
+
+#include <iostream>
+using namespace std;
+
+//Problem - 3 
+//Types of Inheritance
+//1.5 --  hybrid inheritance
+
+class A {
+public:
+    void print() {
+        cout << "Hi there" << "\n";
+    }
+};
+
+class B : virtual public A{
+
+};
+class C :  virtual public A {   
+
+};
+class D : public B , public C {
+    
+};
+
+
+int main() {
+     D obj1;
+     obj1.print();
+    return 0;
+}
