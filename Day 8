@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+// Problem 1
+// Single Inheritance
+
+class Vehicle {
+public:
+    void start() {
+        cout << "Vehicle Start" << "\n";
+    }
+};
+
+class Car : public Vehicle {   // inheritance added
+public:
+    void drive() {
+        cout << "Car is running" << "\n";
+    }
+};
+
+int main() {
+
+    Car obj1;
+
+    obj1.drive();
+    obj1.start();
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+//Problem - 2 
+//Types of Inheritance
+//1.2 --  Multilevel inheritance
+
+class Vehicle {
+public:
+    void start() {
+        cout << "Vehicle Start" << "\n";
+    }
+};
+
+class Car : public Vehicle {   // inheritance added
+public:
+    void drive() {
+        cout << "Car is running" << "\n";
+    }
+};
+
+class speedometer : public Car {
+public: 
+void speed() {
+        cout << "Car is running at 60km/hr " << "\n";
+    }
+};
+
+int main() {
+
+    speedometer obj1;
+    obj1.start();
+    obj1.drive();
+    obj1.speed();
+    return 0;
+}
