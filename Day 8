@@ -73,7 +73,7 @@ using namespace std;
 
 //Problem - 3 
 //Types of Inheritance
-//1.2 --  hierarchical inheritance
+//1.3 --  hierarchical inheritance
 
 class Vehicle {
 public:
