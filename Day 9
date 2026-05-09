@@ -43,3 +43,26 @@ int main() {
     kitchenApp->work();
     return 0;
 }
+
+
+// Program--2
+//define an array and initilization an transversal
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[5];
+   
+   cout << "Enter 5 numbers" << "\n";
+   
+   for(int i = 0; i <5; i++){
+       cin >> arr[i];
+   }
+   
+   cout << "Array element are ... " <<"\n";
+    
+    for(int i = 0; i < 5; i++){
+    cout << arr[i] << " ";
+    }
+    return 0;
+}
