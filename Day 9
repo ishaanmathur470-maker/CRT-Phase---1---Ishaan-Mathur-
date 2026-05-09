@@ -66,3 +66,25 @@ int main() {
     }
     return 0;
 }
+
+// Program--3
+//Sum of an array 
+#include <iostream>
+using namespace std;
+
+int main() {
+   int arr[5];
+   int Sum = 0;
+   
+   cout << "Enter 5 numbers" << "\n";
+   
+   for(int i = 0; i <5; i++){
+       cin >> arr[i];
+       Sum = Sum + arr[i];
+   }
+   
+   cout << "Sum of Array element are ... " << Sum;
+    
+   
+    return 0;
+}
