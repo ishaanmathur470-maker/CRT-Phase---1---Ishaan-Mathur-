@@ -21,3 +21,22 @@ int main() {
 }
     return 0;
 }
+
+ #include <iostream>
+using namespace std;
+// Problem -- 2
+// Sum of elements oi 2d array
+
+int main() {
+    int arr[2][2]; 
+    int Sum = 0;
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+            Sum = Sum + arr[i][j];
+        }
+    }
+    cout << "Sum of these array are - :"  << Sum <<"\n";
+
+    return 0;
+}
