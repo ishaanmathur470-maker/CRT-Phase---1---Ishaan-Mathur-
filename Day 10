@@ -1,0 +1,23 @@
+ #include <iostream>
+using namespace std;
+// Problem -- 1
+// making of 2d array
+
+int main() {
+    int arr[2][2]; 
+
+    // Correct way: Start at 0, end before 2
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cin >> arr[i][j];
+        }
+    }
+    cout << "Here is your 2d array" << "\n";
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << "\n";
+}
+    return 0;
+}
