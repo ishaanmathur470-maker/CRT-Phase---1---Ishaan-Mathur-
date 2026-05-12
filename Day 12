@@ -1,0 +1,19 @@
+// Problem - 1
+#include <iostream>
+using namespace std;
+
+void printNumber( int n ) {
+    
+    if(n > 5){
+        return;
+    }
+    
+    cout << n << " ";
+    printNumber( n + 1);
+}
+
+int main() {
+    printNumber(1);
+}
+
+   
