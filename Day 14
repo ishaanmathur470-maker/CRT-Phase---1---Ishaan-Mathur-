@@ -1,0 +1,37 @@
+// Linked List 
+// Problem - 1 -: Insert data at head of linked list
+
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int new_data) {
+        this->data = new_data;
+        this->next = nullptr;
+    }
+};
+Node* head = nullptr;
+
+void display() {
+    Node* temp = head;
+    while (temp != nullptr) {
+        cout << temp->data << " -> ";
+        temp = temp->next; 
+    }
+    cout << "NULL" << endl;
+}
+
+int main() {
+    head = new Node(10);
+    head->next = new Node(20);
+    head->next->next = new Node(30);
+    head->next->next->next = new Node(40);
+  
+    display();
+
+    return 0;
+}
