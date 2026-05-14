@@ -35,3 +35,70 @@ int main() {
 
     return 0;
 }
+
+// Linked List 
+// Problem - 2 -: Insert data at tail of linked list.    
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int val) {
+        data = val;
+        next = nullptr;
+    }
+};
+
+class LinkedList {
+    Node* head;
+
+public:
+    LinkedList() { head = nullptr; }
+
+    void insertAtTail(int val) {
+        Node* newNode = new Node(val);
+
+        if (head == nullptr) {
+            head = newNode;
+            return;
+        }
+
+        Node* temp = head;
+        while (temp->next != nullptr) {
+            temp = temp->next;
+        }
+
+        temp->next = newNode;
+    }
+
+    void display() {
+        Node* temp = head;
+        if (temp == nullptr) {
+            cout << "List is empty." << endl;
+            return;
+        }
+
+        while (temp != nullptr) {
+            cout << temp->data << " -> ";
+            temp = temp->next;
+        }
+        cout << "NULL" << endl;
+    }
+};
+
+int main() {
+    LinkedList myList;
+
+    myList.insertAtTail(10);
+    myList.insertAtTail(20);
+    myList.insertAtTail(30);
+    myList.insertAtTail(40);
+
+    cout << "Linked List after inserting at tail:" << endl;
+    myList.display();
+
+    return 0;
+}
